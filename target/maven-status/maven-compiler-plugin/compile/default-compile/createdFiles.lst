@@ -1,7 +1,6 @@
 com\limit\properties\repository\LocationRepository.class
 com\limit\properties\errors\GlobalErrorHandler.class
 com\limit\properties\entity\Property.class
-com\limit\properties\service\PropertiesService$2.class
 META-INF\spring-configuration-metadata.json
 com\limit\properties\domain\Location.class
 com\limit\properties\service\EasyBrokerPropertiesService.class
@@ -18,7 +17,6 @@ com\limit\properties\controller\PropertiesController.class
 com\limit\properties\entity\Image.class
 com\limit\properties\service\PropertiesService.class
 com\limit\properties\domain\GetPropertiesRequestDTO__Javadoc.json
-com\limit\properties\service\PropertiesService$1.class
 com\limit\properties\repository\PropertyRepository.class
 com\limit\properties\domain\PropertyResponseDTO.class
 com\limit\properties\repository\ImageRepository.class

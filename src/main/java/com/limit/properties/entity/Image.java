@@ -1,9 +1,6 @@
 package com.limit.properties.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -13,14 +10,18 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@Table(name = "image")
+@Table(name = "images")
 @RequiredArgsConstructor
 public class Image {
 
     @Id
     @Column(name = "id", nullable = false)
-    private Long id;
+    private Integer id;
 
-    @Column(name = "images")
+    @ManyToOne
+    @JoinColumn(name = "property_id", referencedColumnName = "id")
+    private Property property;
+
+    @Column(name = "image")
     private String images;
 }

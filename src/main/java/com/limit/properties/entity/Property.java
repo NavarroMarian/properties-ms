@@ -21,7 +21,7 @@ public class Property {
 
 	@Id
 	@Column(name = "id", nullable = false)
-	private Long id;
+	private String id;
 
 	@Column(name = "property_type")
 	private String propertyType;
@@ -32,9 +32,6 @@ public class Property {
 
 	@Column(name = "private_description")
 	private String privateDescription;
-
-	@ManyToOne
-	private Operation operations;
 
 	private String agent;
 
@@ -55,8 +52,8 @@ public class Property {
 	private Integer floors;
 	private String expenses;
 
-	@ManyToOne
-	private Location location;
+	@OneToMany(mappedBy = "name")
+	private List<Location> location;
 
 	@Column(name = "share_commission")
 	private boolean shareCommission;
@@ -64,8 +61,11 @@ public class Property {
 	@Column(name = "collaboration_notes")
 	private String collaborationNotes;
 
-	@ManyToOne
-	private Image images;
+	@OneToMany(mappedBy = "operations")
+	private List<Operation> operations;
+
+	@OneToMany(mappedBy = "images")
+	private List<Image> images;
 
 	@Column(name = "show_exact_location")
 	private boolean showExactLocation;
