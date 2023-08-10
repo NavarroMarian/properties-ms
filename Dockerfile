@@ -8,5 +8,3 @@ ENV POSTGRES_PASSWORD your_password
 
 EXPOSE 5432
 
-#  docker build --no-cache -f Dockerfile -t limit/postgres:latest .
-# docker run -p 5432:5432 -e POSTGRES_PASSWORD=your_password postgres:latest

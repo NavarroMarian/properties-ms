@@ -65,6 +65,19 @@ Response:
 ...
 ]
 
+## Installation(Local)
+
+-Construir la imagen base
+
+```
+docker build --no-cache -f Dockerfile -t limit/postgres:latest .
+```
+-Desplegar el container
+
+```
+docker run -p 5432:5432 -e POSTGRES_PASSWORD=your_password postgres:latest
+```
+
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
