@@ -1,0 +1,1 @@
+{"doc":"","fields":[{"name":"page","doc":" Content's page\n"},{"name":"limit","doc":" Max results per page (Maximum: 50)\n"},{"name":"searchPropertyTypes","doc":" Search property types\n"},{"name":"search","doc":" Optional search\n"}],"enumConstants":[],"methods":[],"constructors":[]}

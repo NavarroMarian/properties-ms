@@ -1,0 +1,34 @@
+{
+	"properties": [
+		{
+			"name": "app.guesty.url",
+			"type": "java.lang.String",
+			"description": "Base URL to make requests to GUESTY API"
+		},
+		{
+			"name": "app.guesty.calendars-endpoint",
+			"type": "java.lang.String",
+			"description": "Calendars endpoint for Guesty API"
+		},
+		{
+			"name": "app.guesty.listings-endpoint",
+			"type": "java.lang.String",
+			"description": "Listings endpoint for Guesty API"
+		},
+		{
+			"name": "app.guesty.client-id",
+			"type": "java.lang.String",
+			"description": "Client ID to authenticate against Guesty"
+		},
+		{
+			"name": "app.guesty.client-secret",
+			"type": "java.lang.String",
+			"description": "Client secret to authenticate against Guesty"
+		},
+		{
+			"name": "app.guesty.sandbox",
+			"type": "java.lang.Boolean",
+			"description": "A boolean stating if the application is meant to run on sandbox mode"
+		}
+	]
+}
