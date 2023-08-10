@@ -8,6 +8,8 @@ This microservice is built using Java 17 and Spring Boot 3. It consumes the Easy
 2. Clone this repository.
 3. Install and configure Docker (if needed).
 4. Update `application.properties` with your EasyBroker API credentials.
+5. Update `application.properties` with DataBase credentials.
+
 
 ## Usage
 
@@ -21,17 +23,19 @@ java -jar target/property-microservice.jar
 
 Access the API:
 
-GET http://localhost:8080/api/properties
+GET http://localhost:8081/api/properties
 
 Configuration
 
 You can configure the application by editing the application.properties file.
+# API Documentation
 
+http://localhost:8081/api/v1/webjars/swagger-ui/4.15.5/index.html#/
 
 # EasyBroker API Configuration
 
-easybroker.api.base-url=https://api.easybroker.com/v1
-easybroker.api.token=YOUR_EASYBROKER_API_TOKEN
+app.easy.broker.base_url=https://api.easybroker.com/v1
+app.easy.broker.access-token=EASY_BROKER_TOKEN
 
 Endpoints
 
@@ -48,7 +52,7 @@ propertyTypes (optional): List of property types to filter
 
 Example:
 
-GET http://localhost:8080/api/properties?page=1&limit=10&propertyTypes=APARTMENT,VILLA
+GET http://localhost:8081/api/properties?page=1&limit=10&propertyTypes=APARTMENT,VILLA
 
 Response:
 [
